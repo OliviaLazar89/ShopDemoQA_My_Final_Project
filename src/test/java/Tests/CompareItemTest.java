@@ -17,6 +17,8 @@ public class CompareItemTest extends Hooks {
 
         SearchPage searchPage = new SearchPage(getDriver());
         searchPage.searchItem(searchPage.itemSearchType, Keys.ENTER);
+
+        //Am gasit un bug din automation
         searchPage.compareItem();
 
         searchPage.validateCompareItems();
